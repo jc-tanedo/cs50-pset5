@@ -1,0 +1,15 @@
+0.  A lung disease caused by inhaling very fine particles, esp silica particles.
+1.  getrusage gets the resource usage
+2.  16 member
+3.  because they are structs
+4.  checks the file line by line, first if alphabetical or not too long (45 chars)
+    if not alphabetical (or ') check if numerical. if numerical, skip word. reset index
+    if not alphabetical, not ', and not numerical and index > 0 (a letter or more is saved)
+    check word against dictionary if misspelled
+    if mispelled, print so, if not, skip
+    set index to zero for next word
+    loop until EOF
+    
+5.  reading in whole words at a time means program loses ability to skip loading characters
+    on words that contain numeric characters, therefore using more memory
+6.  to prevent check and load from writing on them
